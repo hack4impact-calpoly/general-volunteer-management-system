@@ -7,7 +7,7 @@ export default function login() {
     <div className={style.container}>
       <div className={style.logIn}>
         <div className={style.content}>
-          <h1>Login</h1>
+          <h1><strong>Login</strong></h1>
           <form>
             <div className={style.label}>
               <label htmlFor="email"><strong>Email</strong></label>

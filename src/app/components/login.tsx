@@ -10,13 +10,13 @@ export default function login() {
           <h1>Login</h1>
           <form>
             <div className={style.label}>
-              <label htmlFor="email">Email</label>
+              <label htmlFor="email"><strong>Email</strong></label>
             </div>
             <div>
               <input type="email" required></input>
             </div>
             <div className={style.label}>
-              <label htmlFor="password">Password</label>
+              <label htmlFor="password"><strong>Password</strong></label>
             </div>
             <div>
               <input type="password" required></input>
@@ -24,7 +24,7 @@ export default function login() {
             </div>
             <p className={style.forgotPass}>
               <Link href="/forgotPassword">
-                Forgot password?
+                <strong>Forgot password?</strong>
               </Link>
             </p>
             <div>
@@ -33,7 +33,7 @@ export default function login() {
             <p className={style.signUp}>
               Don&apos;t have an account?{" "}
               <Link href="/createAccount" className={style.createAcc}>
-                Create Account
+                <strong>Create Account</strong>
               </Link>
             </p>
           </form>

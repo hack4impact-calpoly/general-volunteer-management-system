@@ -20,11 +20,11 @@ export default function login() {
             </div>
             <div>
               <input type="password" required></input>
-              <Image className={style.passwordToggle} src="/h4ishowpass.png" alt=""></Image>
+              <Image className={style.passwordToggle} src="/togglePass.png" alt=""></Image>
             </div>
             <p className={style.forgotPass}>
               <Link href="/forgotPassword">
-                <strong>Forgot password?</strong>
+                Forgot password?
               </Link>
             </p>
             <div>
@@ -32,8 +32,8 @@ export default function login() {
             </div>
             <p className={style.signUp}>
               Don&apos;t have an account?{" "}
-              <Link href="/createAccount">
-                <strong>Create Account</strong>
+              <Link href="/createAccount" className={style.createAcc}>
+                Create Account
               </Link>
             </p>
           </form>

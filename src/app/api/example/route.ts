@@ -1,6 +1,5 @@
 import connectDB from "@database/db";
 import { NextResponse } from "next/server";
-//import { NextResponse } from "next/server";
 
 /**
  * Example GET API route

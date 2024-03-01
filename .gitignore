@@ -36,3 +36,4 @@ next-env.d.ts
 
 # git ignore .env
 .env
+.node_modules

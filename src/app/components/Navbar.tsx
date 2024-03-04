@@ -6,9 +6,9 @@ export default function Navbar() {
     <>
       <div className="flex space-x-16 p-4 bg-slate-200">
         <Link href="/">Home</Link>
-        <Link href="/pages/login">Login</Link>
+        <Link href="/pages/authentication/login">Login</Link>
         <Link href="/pages/dashboard">Dashboard</Link>
-        <Link href="/pages/calendar">Calendar</Link>
+        <Link href="/pages/dashboard/event-calendar">Calendar</Link>
       </div>
     </>
   );

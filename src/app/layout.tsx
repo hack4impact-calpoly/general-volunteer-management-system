@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Navbar from "@components/Navbar";
 
 //! Update metadata to match your project
 export const metadata: Metadata = {
@@ -15,13 +14,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
+      <head className="m-0 p-0">
         <link href="/dist/output.css" rel="stlylesheet" />
       </head>
-      <body>
-        <Navbar />
-        {children}
-      </body>
+      <body className="m-0 p-0">{children}</body>
     </html>
   );
 }

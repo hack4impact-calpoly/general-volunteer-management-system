@@ -21,7 +21,7 @@ export default function Page() {
             </div>
             <div>
               <input
-                className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring h-14 w-full border border-primary-color"
+                className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring px-3 py-2 h-14 w-full border border-primary-color"
                 type="email"
                 required
               ></input>

@@ -13,7 +13,7 @@ export default function Page() {
           <form>
             <div className="mb-2">
               <label
-                className="font-medium font-size: 1.125rem; leading-5"
+                className="font-medium text-lg leading-5"
                 htmlFor="email"
               >
                 Email
@@ -28,7 +28,7 @@ export default function Page() {
             </div>
             <div className="mb-2 mt-6">
               <label
-                className="font-medium font-size: 1.125rem; leading-5"
+                className="font-medium text-lg leading-5"
                 htmlFor="password"
               >
                 Password

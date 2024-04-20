@@ -7,8 +7,8 @@ export default function Vertical_Navbar_Component() {
     <>
     <ul className="m-0 h-max p-0 pb-96 w-10 bg-stone-400">
       <li className="block pt-5 pl-2"><Link href="/"><Home></Home></Link></li>
-      <li className="block pt-5 pl-2"><Link href="/pages/calendar"><CalendarDays></CalendarDays></Link></li>
-      <li className="block pt-5 pl-2"><Link href="/pages/dashboard"><Clock></Clock></Link></li>
+      <li className="block pt-5 pl-2"><Link href="/"><CalendarDays></CalendarDays></Link></li>
+      <li className="block pt-5 pl-2"><Link href="/"><Clock></Clock></Link></li>
     </ul>
   </>
   );

@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <main>
       <h1>Volunteer Management System Home Page</h1>
-      <Vertical_Navbar_Component></Vertical_Navbar_Component>
+      <Vertical_Navbar_Component />
     </main>
   );
 }

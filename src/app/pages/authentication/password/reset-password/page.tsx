@@ -14,21 +14,14 @@ import {
   FormLabel,
   FormMessage,
 } from "@/components/ui/form";
-import { PasswordInput } from "@components/password-input";
+import { Input } from "@/components/ui/input";
 import { ArrowLeftIcon } from "lucide-react";
 
 // Zod schema to define form parameters
-const min_password_length = 8;
 
-const formSchema = z
-  .object({
-    new_password: z.string().min(min_password_length),
-    confirm_new_password: z.string().min(min_password_length),
-  })
-  .refine((data) => data.new_password === data.confirm_new_password, {
-    message: "Passwords do not match",
-    path: ["confirm_new_password"],
-  });
+const formSchema = z.object({
+  email: z.string().email("Not a valid email"),
+});
 
 function onSubmit(values: z.infer<typeof formSchema>) {
   console.log(values);
@@ -42,47 +35,36 @@ export default function Page() {
   return (
     <>
       <Link href="/pages/authentication/login">
-        <ArrowLeftIcon className="absolute -mt-48 ml-16" size={42} />
+        <ArrowLeftIcon className="absolute -mt-16 ml-16" size={42} />
       </Link>
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
-          <div className="mx-auto w-1/3 shadow-xl border-inherit border p-10 mt-64">
-            <div>
-              <h2 className="text-3xl font-semibold text-primary-text-color mb-8">
-                Reset Password
+          <div className="mx-auto w-1/2 shadow-xl border-inherit border p-10 mt-32">
+            <div className="">
+              <h2 className="text-3xl font-semibold text-primary-text-color">
+                Forgot Password
               </h2>
+              <h1>
+                Please enter the email associated with your account to receive a
+                reset link.
+              </h1>
               <FormField
                 control={form.control}
-                name="new_password"
-                render={({ field }) => (
-                  <FormItem className="mb-6">
-                    <FormLabel className="text-primary-text-color">
-                      New Password
-                    </FormLabel>
-                    <FormControl>
-                      <PasswordInput {...field} />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-              <FormField
-                control={form.control}
-                name="confirm_new_password"
+                name="email"
                 render={({ field }) => (
                   <FormItem>
                     <FormLabel className="text-primary-text-color">
-                      Confirm New Password
+                      Email
                     </FormLabel>
                     <FormControl>
-                      <PasswordInput {...field} />
+                      <Input {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
                 )}
               />
               <Button className="w-full mt-7 bg-primary-color" type="submit">
-                Submit
+                Send
               </Button>
             </div>
           </div>

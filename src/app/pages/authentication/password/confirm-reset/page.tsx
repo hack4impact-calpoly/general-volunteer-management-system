@@ -11,7 +11,7 @@ export default function Confirm_Reset_Component() {
         You have successfully reset your password.
       </h3>
       <br></br>
-      <Link href="/">
+      <Link href="/pages/authentication/login">
         <button className="flex align-center justify-center text-sm w-2/5 h-9 bg-[#314b89] py-2 font-sans text-white border-none m-auto">
           Back to Login
         </button>

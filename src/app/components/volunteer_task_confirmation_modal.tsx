@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { AlertCircle } from "lucide-react";
+import { X } from 'lucide-react';
 
 const VolunteerTaskConfirmationModal: React.FC<{visible?: boolean, onClose: () => void, eventName: string, location: string, address: string, time: string}> = ({
   visible = true,
@@ -41,7 +42,9 @@ return (
         className = "hover:bg-transparent hover:text-primary-link-hover-color text-3xl text-black bg-transparent absolute left-0 top-0"
         onClick={onClose}
         >
-          x
+          <X 
+          className="w-5 h-5"
+          />
         </Button>
       </div>
     </div>

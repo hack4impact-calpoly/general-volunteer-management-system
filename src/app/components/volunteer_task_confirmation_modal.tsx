@@ -1,8 +1,6 @@
 import React from 'react';
 import { Button } from "@/components/ui/button";
-import Image from 'next/image';
-import elipse from "@components/elipse.png";
-import exclam from "@components/exclam.png";
+import { AlertCircle } from "lucide-react";
 
 const VolunteerTaskConfirmationModal: React.FC<{visible?: boolean, onClose: () => void, eventName: string, location: string, address: string, time: string}> = ({
   visible = true,
@@ -17,8 +15,9 @@ return (
       <div className='text-center	my-32 font-medium left-1/2 right-1/2 content-center w-[500px]'>
         
         <div className="mb-7 flex justify-center items-center">
-          <Image src={elipse} alt=""/>
-          <Image className="absolute" src={exclam} alt=""/>
+          <AlertCircle 
+          className="w-24 h-24 text-primary-color"
+          />
         </div>
 
         <h1 className='text-4xl text-primary-color'>Volunteer for</h1>

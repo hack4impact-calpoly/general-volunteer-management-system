@@ -9,7 +9,7 @@ export default function Volunteer_Task_Success() {
           <h1 className="text-center py-8 text-4xl font-sans font-medium text-rgb-1-1-38">Success!</h1>
           <h3 className="text-center mx-16 font-sans font-normal text-black">You have registered as a volunteer for [EventName]. You can access details for this event again through your dashboard.</h3>
           <br></br>
-          <Link href="/"><button className="flex align-center justify-center relative text-sm w-2/5 h-9 bg-[#314b89] py-2 font-sans text-white border-none m-auto">Return to Home</button></Link>
+          <Link href="/pages/dashboard"><button className="flex align-center justify-center relative text-sm w-2/5 h-9 bg-[#314b89] py-2 font-sans text-white border-none m-auto">Return to Home</button></Link>
       </div>
     );
   }

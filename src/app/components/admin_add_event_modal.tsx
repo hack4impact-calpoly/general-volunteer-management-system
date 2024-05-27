@@ -24,8 +24,8 @@ export default function Admin_Add_Event_Modal() {
           </div>
           <br/>
           <div className="grid grid-cols-2 gap-4 place-content-center">
-            <Link href="/"><button className="flex align-center justify-center relative text-sm w-2/5 h-9 py-2 outline outline-[#314b89] font-sans text-black outline-1 border-none m-auto">Cancel</button></Link>
-            <Link href="/"><button className="flex align-center justify-center relative text-sm w-2/5 h-9 bg-[#314b89] outline outline-[#314b89] outline-1 py-2 font-sans text-white border-none m-auto">Submit Event</button></Link>
+            <Link href="/pages/dashboard/event-calendar"><button className="flex align-center justify-center relative text-sm w-2/5 h-9 py-2 outline outline-[#314b89] font-sans text-black outline-1 border-none m-auto">Cancel</button></Link>
+            <Link href="/pages/dashboard"><button className="flex align-center justify-center relative text-sm w-2/5 h-9 bg-[#314b89] outline outline-[#314b89] outline-1 py-2 font-sans text-white border-none m-auto">Submit Event</button></Link>
           </div>
       </div>
     );

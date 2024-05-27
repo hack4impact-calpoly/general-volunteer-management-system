@@ -25,11 +25,10 @@ Year over year, we have noticed that the **Volunteer Management System** (VMS) i
 
 The VMS team consists of {#} Cal Poly students. Over the course of about 9 months, we worked as a team to deploy this web application. The team members are listed below:
 
-- [First Last](https://www.linkedin.com/) - Project Manager
-- [First Last](https://www.linkedin.com/) - Designer
+- [Annes Huynh](https://www.linkedin.com/in/annes-huynh/) - Project Manager
 - [Jin Wu](https://www.linkedin.com/in/jin-wu-a8a621201/) - Tech Lead
-- [First Last](https://www.linkedin.com/) - Tech Lead
-- [First Last](https://www.linkedin.com/) - Software Developer
+- [Sophia Chang](https://www.linkedin.com/) - Developer
+- [Winnie Trinh](https://www.linkedin.com/) - Developer
 
 ## Getting Started And Contributing
 
